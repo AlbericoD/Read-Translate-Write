@@ -1,0 +1,43 @@
+{
+  "name": "read-translate-write",
+  "version": "1.0.0",
+  "description": "parse files",
+  "author": "Alberico Dias Barreto Filho <a.diasbarreto@icloud.com>",
+  "homepage": "https://github.com/AlbericoD/read-translate-write#readme",
+  "keywords": [
+    "node"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "start": "node src/index.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlbericoD/read-translate-write.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlbericoD/read-translate-write/issues"
+  },
+  "dependencies": {
+    "letter-count": "2.8.9",
+    "node-dir": "0.1.17"
+  },
+  "devDependencies": {
+    "@types/jest": "22.2.3",
+    "coveralls": "3.0.1",
+    "eslint": "4.19.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "jest": "22.4.4",
+    "prettier": "1.12.1"
+  },
+  "license": "MIT"
+}
